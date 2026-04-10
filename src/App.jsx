@@ -3,7 +3,7 @@ import SearchBar from "./components/SearchBar";
 import MovieList from "./components/MovieList";
 import MovieModal from "./components/MovieModal";
 
-const API_KEY = "import.meta.env.VITE_API_KEY";
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 function App() {
   const [movies, setMovies] = useState([]);
